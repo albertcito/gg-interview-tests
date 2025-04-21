@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <div class="sticky top-0 z-10 bg-background border-b border-neutral-100">
+    <div class="sticky top-0 z-10 bg-background border-b dark:border-neutral-800 border-neutral-100">
       <nav>
         <ul class="flex gap-2 text-sm">
           <li>
