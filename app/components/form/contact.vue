@@ -25,16 +25,16 @@ const { add } = useToast()
     class="flex flex-col gap-1"
     @submit="add({ title: 'Success', description: 'Success', })"
   >
-    <UFormField label="First Name" name="firstName">
+    <UFormField label="First Name" name="firstName" :class="[{ 'bg-green-50': state.firstName !== props.initialValues?.firstName }]">
       <UInput v-model="state.firstName" />
     </UFormField>
-    <UFormField label="Last Name" name="lastName">
+    <UFormField label="Last Name" name="lastName" :class="[{ 'bg-green-50': state.lastName !== props.initialValues?.lastName }]">
       <UInput v-model="state.lastName" />
     </UFormField>
-    <UFormField label="Email" name="email">
+    <UFormField label="Email" name="email" :class="[{ 'bg-green-50': state.email !== props.initialValues?.email }]">
       <UInput v-model="state.email" />
     </UFormField>
-    <UFormField label="Phone" name="phone">
+    <UFormField label="Phone" name="phone" :class="[{ 'bg-green-50': state.phone !== props.initialValues?.phone }]">
       <UInput v-model="state.phone" v-maska="'(###) ###-####'" />
     </UFormField>
     <div class="p-2">
